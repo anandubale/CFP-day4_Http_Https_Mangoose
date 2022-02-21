@@ -1,0 +1,65 @@
+HTTP:- Hypertext Transfer Protocol:
+
+-Set of rules for transferring files -- such as text, images, sound, video and other multimedia files -- over the web(application-layer protocol)
+-HTTP follows a classical client-server model, with a client opening a connection to make a request, then waiting until it receives a response. 
+-HTTP is a stateless protocol, meaning that the server does not keep any data (state) between two requests.
+-runs on top of the TCP/IP suite of protocols, which forms the foundation of the internet.
+
+
+
+working:
+
+In addition to the web page files it can serve, a web server contains an HTTP daemon, a program that waits for HTTP
+requests and handles them when they arrive. A web browser is an HTTP client that sends requests to servers. When the 
+browser user enters file requests by either "opening" a web file by typing in a URL or clicking on a hypertext link, the browser 
+builds an HTTP request and sends it to the Internet Protocol address (IP address) indicated by the URL. 
+The HTTP daemon in the destination server  receives the request and sends back the requested file or files associated with the request.
+
+To expand on this example, a user wants to visit something.com. 
+computer sends ("GET" request)-------Using HTTP------>  to a server that hosts that address.
+
+
+
+
+HTTPS use of :Secure Sockets Layer (SSL) 
+                or Transport Layer Security (TLS) 
+                    as a sublayer under regular HTTP application layering
+
+
+ HTTPS ---->encrypts ----->decryptsuser HTTP page requests as well as the pages that are returned by the web server.
+
+
+
+ HTTP messages are requests or responses. 
+ Client devices submit HTTP requests ------> servers, 
+        <---------HTTP responses
+
+
+ Each HTTP request contains encoded data, with information such as:
+
+ 1.The specific version of HTTP followed. HTTP and HTTP/2
+ 2.A URL
+ 3.An HTTP method 
+ 4.HTTP request headers
+ 5.An HTTP body -user forms -- username/password logins, short responses and file uploads 
+
+
+HTTP responses:
+
+ 1.HTTP status code
+ 2.HTTP response headers
+ 3.An HTTP body (optional)
+
+
+HTTP status codes
+In response to HTTP requests, servers often issue response codes, indicating the request is being processed:
+
+1.200 OK. This means that the request, such as GET or POST, worked and is being acted upon.
+2.300 Moved Permanently. This response code means that the URL of the requested resource has been changed permanently.
+3.401 Unauthorized. The client, or user making the request of the server, has not been authenticated.
+4.403 Forbidden. The client's identity is known but has not been given access authorization.
+5.404 Not Found. This is the most frequent error code. It means that the URL is not recognized or the resource at the location does not exist.
+6.500 Internal Server Error. The server has encountered a situation it doesn't know how to handle.
+
+
+https://whatis.techtarget.com/definition/HTTP-Hypertext-Transfer-Protocol
